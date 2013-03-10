@@ -33,16 +33,16 @@ no_index:
 provides:
   Dancer2::Plugin::Queue:
     file: lib/Dancer2/Plugin/Queue.pm
-    version: 0.002
+    version: 0.003
   Dancer2::Plugin::Queue::Array:
     file: lib/Dancer2/Plugin/Queue/Array.pm
-    version: 0.002
+    version: 0.003
   Dancer2::Plugin::Queue::Role::Queue:
     file: lib/Dancer2/Plugin/Queue/Role/Queue.pm
-    version: 0.002
+    version: 0.003
   Dancer2::Plugin::Queue::Role::Test:
     file: lib/Dancer2/Plugin/Queue/Role/Test.pm
-    version: 0.002
+    version: 0.003
 recommends:
   Class::Load::XS: 0
 requires:
@@ -59,4 +59,4 @@ resources:
   bugtracker: https://github.com/dagolden/dancer2-plugin-queue/issues
   homepage: https://metacpan.org/release/Dancer2-Plugin-Queue
   repository: git://github.com/dagolden/dancer2-plugin-queue.git
-version: 0.002
+version: 0.003

@@ -1,5 +1,11 @@
 Revision history for Dancer2-Plugin-Queue
 
+0.003     2013-03-09 21:24:14 America/New_York
+
+    [CHANGED]
+
+    - Changed how test role sets options
+
 0.002     2013-03-08 23:00:35 America/New_York
 
     [CHANGED]

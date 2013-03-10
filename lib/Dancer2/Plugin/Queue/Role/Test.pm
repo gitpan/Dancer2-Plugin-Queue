@@ -4,7 +4,7 @@ use warnings;
 
 package Dancer2::Plugin::Queue::Role::Test;
 # ABSTRACT: A Test::Roo::Role for testing Queue backends
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
 
 use Test::Roo::Role;
 use MooX::Types::MooseLike::Base qw/Str HashRef CodeRef/;
@@ -23,10 +23,11 @@ has backend => (
 
 
 has options => (
-    is      => 'ro',
+    is      => 'lazy',
     isa     => HashRef,
-    default => sub { { name => 'test' } },
 );
+
+sub _build_options { }
 
 has _server => (
     is  => 'lazy',
@@ -93,7 +94,7 @@ Dancer2::Plugin::Queue::Role::Test - A Test::Roo::Role for testing Queue backend
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 

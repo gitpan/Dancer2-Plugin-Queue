@@ -4,7 +4,7 @@ use warnings;
 
 package Dancer2::Plugin::Queue;
 # ABSTRACT: Dancer2 plugin for message queue abstractions
-our $VERSION = '0.002'; # VERSION
+our $VERSION = '0.003'; # VERSION
 
 use Dancer2::Plugin;
 use Class::Load qw/try_load_class/;
@@ -69,7 +69,7 @@ Dancer2::Plugin::Queue - Dancer2 plugin for message queue abstractions
 
 =head1 VERSION
 
-version 0.002
+version 0.003
 
 =head1 SYNOPSIS
 
