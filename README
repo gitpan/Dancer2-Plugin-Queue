@@ -2,7 +2,7 @@ NAME
     Dancer2::Plugin::Queue - Dancer2 plugin for message queue abstractions
 
 VERSION
-    version 0.003
+    version 0.004
 
 SYNOPSIS
       # in config.yml

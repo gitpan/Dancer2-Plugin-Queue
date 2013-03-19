@@ -4,7 +4,7 @@ use warnings;
 
 package Dancer2::Plugin::Queue::Role::Queue;
 # ABSTRACT: Dancer2::Plugin::Queue implementation API
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 
 use Moo::Role;
 
@@ -29,7 +29,7 @@ Dancer2::Plugin::Queue::Role::Queue - Dancer2::Plugin::Queue implementation API
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 

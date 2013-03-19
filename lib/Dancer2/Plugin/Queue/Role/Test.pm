@@ -4,13 +4,11 @@ use warnings;
 
 package Dancer2::Plugin::Queue::Role::Test;
 # ABSTRACT: A Test::Roo::Role for testing Queue backends
-our $VERSION = '0.003'; # VERSION
+our $VERSION = '0.004'; # VERSION
 
 use Test::Roo::Role;
 use MooX::Types::MooseLike::Base qw/Str HashRef CodeRef/;
 
-use Dancer2 ':syntax';
-use Dancer2::Plugin::Queue;
 use HTTP::Tiny;
 use Test::TCP;
 
@@ -37,6 +35,10 @@ has _server => (
 sub _build__server {
     my ($self) = @_;
     return sub {
+        package
+            MyServer;
+        use Dancer2 ':syntax';
+        use Dancer2::Plugin::Queue;
         my $port = shift;
 
         set confdir      => '.';
@@ -94,7 +96,7 @@ Dancer2::Plugin::Queue::Role::Test - A Test::Roo::Role for testing Queue backend
 
 =head1 VERSION
 
-version 0.003
+version 0.004
 
 =head1 SYNOPSIS
 
